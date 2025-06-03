@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laguna</title>
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/root.css">
+    <!-- Desenvolvido por Matheus dev @iamtheusss -->
 </head>
+
 <body>
     <header>
         <a href="#pag1"><img src="./src/assets/img/logo.svg" alt="Logo da Laguna" id="logo-laguna"></a>
@@ -18,11 +21,30 @@
         </nav>
 
         <div class="user-buttons">
-            <button class="header-buttons"><img src="./src/assets/img/instagram.svg" alt="botão instagram"></button>
-            <button class="header-buttons"><img src="./src/assets/img/facebook.svg" alt="botão tiktok"></button>
+            <a href="https://www.instagram.com/laguna.croche?igsh=Nm1oNWM1Z2M4YWo3"><button class="header-buttons"><img
+                        src="./src/assets/img/instagram.svg" alt="botão instagram"></button></a>
+            <a href="https://www.tiktok.com/@laguna.croche?_t=ZM-8wsp8FpdGp6&_r=1"><button class="header-buttons"><img
+                        src="./src/assets/img/facebook.svg" alt="botão tiktok"></button></a>
             <button class="header-buttons"><img src="./src/assets/img/tiktok.svg" alt="botão facebook"></button>
         </div>
     </header>
+    <script>
+        let ultimoScroll = 0;
+        const header = document.getElementById("header");
+        window.addEventListener("scroll", () => {
+            const atualScroll = window.scrollY;
+
+            if (atualScroll > ultimoScroll) {
+                // Rolando pra baixo → esconde o header
+                header.style.top = "-100px"; // ajusta esse valor conforme a altura do seu header
+            } else {
+                // Rolando pra cima → mostra o header
+                header.style.top = "0";
+            }
+
+            ultimoScroll = atualScroll;
+        });
+    </script>
     <div id="pag1">
         <main class="main-pag1">
             <h1>Transformando <br> linhas em arte </h1>
@@ -43,7 +65,8 @@
                 <p>Vestido Oceano</p>
             </li>
             <li>
-                <img src="./src/assets/img/conjunto-estrela.svg" alt="Imagem de um vestido de crochê. Conjunto Estrela" />
+                <img src="./src/assets/img/conjunto-estrela.svg"
+                    alt="Imagem de um vestido de crochê. Conjunto Estrela" />
                 <p>Conjunto Estrela</p>
             </li>
             <li>
@@ -65,17 +88,24 @@
         <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</h3>
         <div class="pag3-container">
             <img src="./src/assets/img/quem-somos-nos.svg" alt="Imagem ilustrativa de uma mulher fazendo crochê">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repudiandae, cum omnis quod laudantium, tenetur maiores officia provident, debitis neque ea tempora atque error! Assumenda nesciunt in numquam culpa sit.
-            Consequuntur sapiente dicta nostrum ut, illo ea tenetur! Quibusdam omnis tenetur dolor quod saepe, autem quo vitae voluptatibus, nostrum amet fuga debitis tempore hic aspernatur soluta illum officiis placeat quidem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repudiandae, cum omnis quod laudantium,
+                tenetur maiores officia provident, debitis neque ea tempora atque error! Assumenda nesciunt in numquam
+                culpa sit.
+                Consequuntur sapiente dicta nostrum ut, illo ea tenetur! Quibusdam omnis tenetur dolor quod saepe, autem
+                quo vitae voluptatibus, nostrum amet fuga debitis tempore hic aspernatur soluta illum officiis placeat
+                quidem!</p>
         </div>
     </div>
     <footer>
         <div class="user-buttons">
-            <button class="footer-buttons"><img src="./src/assets/img/footer-insta.svg" alt=""></button>
-            <button class="footer-buttons"><img src="./src/assets/img/footer-tiktok.svg" alt=""></button>
+            <a href="https://www.instagram.com/laguna.croche?igsh=Nm1oNWM1Z2M4YWo3"><button class="footer-buttons"><img
+                        src="./src/assets/img/footer-insta.svg" alt="botão instagram"></button></a>
+            <a href="https://www.tiktok.com/@laguna.croche?_t=ZM-8wsp8FpdGp6&_r=1"><button class="footer-buttons"><img
+                        src="./src/assets/img/footer-tiktok.svg" alt="botão tiktok"></button></a>
             <button class="footer-buttons"><img src="./src/assets/img/footer-facebook.svg" alt=""></button>
         </div>
         <p>Copyright © 2025-2030 - Giovanna Lima, Maria Clara, Matheus Alves - All rights reserved.</p>
     </footer>
 </body>
+
 </html>
