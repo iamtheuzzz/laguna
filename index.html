@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="laguna-header">
         <a href="#pag1"><img src="./src/assets/img/logo.svg" alt="Logo da Laguna" id="logo-laguna"></a>
 
         <nav>
@@ -28,23 +28,6 @@
             <button class="header-buttons"><img src="./src/assets/img/tiktok.svg" alt="botão facebook"></button>
         </div>
     </header>
-    <script>
-        let ultimoScroll = 0;
-        const header = document.getElementById("header");
-        window.addEventListener("scroll", () => {
-            const atualScroll = window.scrollY;
-
-            if (atualScroll > ultimoScroll) {
-                // Rolando pra baixo → esconde o header
-                header.style.top = "-100px"; // ajusta esse valor conforme a altura do seu header
-            } else {
-                // Rolando pra cima → mostra o header
-                header.style.top = "0";
-            }
-
-            ultimoScroll = atualScroll;
-        });
-    </script>
     <div id="pag1">
         <main class="main-pag1">
             <h1>Transformando <br> linhas em arte </h1>
@@ -85,15 +68,15 @@
     </div>
     <div id="pag3">
         <h1>Quem somos nós?</h1>
-        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</h3>
+        <h3>Olá! Eu sou a Bianca, a fundadora da Laguna Crochê. Desde pequena, sempre fui apaixonada pelas artes e pela liberdade de criar com as próprias mãos. Entre pincéis, linhas e agulhas, foi no crochê que encontrei uma forma única de expressar minha criatividade e carinho.
+</h3>
         <div class="pag3-container">
             <img src="./src/assets/img/quem-somos-nos.svg" alt="Imagem ilustrativa de uma mulher fazendo crochê">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repudiandae, cum omnis quod laudantium,
-                tenetur maiores officia provident, debitis neque ea tempora atque error! Assumenda nesciunt in numquam
-                culpa sit.
-                Consequuntur sapiente dicta nostrum ut, illo ea tenetur! Quibusdam omnis tenetur dolor quod saepe, autem
-                quo vitae voluptatibus, nostrum amet fuga debitis tempore hic aspernatur soluta illum officiis placeat
-                quidem!</p>
+            <p>A escolha do nome Laguna vem da minha profunda conexão com o oceano e com a água e elementos que me inspiram como sua calma, fluidez e beleza natural. A  Laguna Crochê nasceu do desejo de transformar fios e ideias em peças únicas e cheias de significado. <br>
+
+            Em janeiro de 2025, essa paixão ganhou forma em uma marca pensada com amor, dedicação e atenção aos detalhes. Aqui, cada produto é feito à mão, com muito cuidado e sempre levando em conta o gosto e as necessidades de cada cliente. A Laguna Crochê é mais do que uma loja: é um espaço onde o artesanal se encontra com o afeto.
+
+            Seja bem-vindo(a) ao nosso universo feito de fios, sonhos e muita inspiração!</p>
         </div>
     </div>
     <footer>
@@ -106,6 +89,24 @@
         </div>
         <p>Copyright © 2025-2030 - Giovanna Lima, Maria Clara, Matheus Alves - All rights reserved.</p>
     </footer>
+    <script>
+  let ultimoScroll = 0;
+  const header = document.getElementById("laguna-header");
+
+  window.addEventListener("scroll", () => {
+    const scrollAtual = window.scrollY;
+
+    if (scrollAtual > ultimoScroll) {
+      // Rolando pra baixo – esconder
+      header.style.top = "-100px"; // ajuste com a altura real do seu header
+    } else {
+      // Rolando pra cima – mostrar
+      header.style.top = "0";
+    }
+
+    ultimoScroll = scrollAtual;
+  });
+</script>
 </body>
 
 </html>
