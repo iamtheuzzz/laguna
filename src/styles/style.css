@@ -87,8 +87,6 @@ nav a {
     width: 470px;
     height: 300px;
 
-
-
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -143,6 +141,10 @@ nav a {
 #pag2 p {
     display: flex;
     justify-content: center;
+}
+
+.browse a {
+    text-decoration: none;
 }
 
 .browse {
