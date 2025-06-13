@@ -46,6 +46,11 @@ nav {
 nav a {
     text-decoration: none;
     color: #003C5A;
+    transition: transform 0.5s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
 }
 
 .user-buttons {
@@ -163,6 +168,8 @@ nav a {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.5s ease;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .browse li:hover {
@@ -171,9 +178,10 @@ nav a {
 
 .browse li img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
     display: block;
-    cursor: pointer;
 }
 
 .browse li p {
@@ -209,18 +217,14 @@ nav a {
 .pag3-container {
     display: flex;
     align-items: flex-start;
-    gap: 100px;
-    /* espaço entre img e p */
+    gap: 100px; /* espaço entre img e p */
     justify-content: center;
-    flex-wrap: wrap;
-    /* para não quebrar feio no mobile */
 }
 
 .pag3-container img {
     width: 100%;
     max-width: 450px;
     height: auto;
-    margin-bottom: 188px;
 }
 
 .pag3-container p {
