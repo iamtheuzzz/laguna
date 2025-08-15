@@ -115,10 +115,10 @@
             const scrollAtual = window.scrollY;
 
             if (scrollAtual > ultimoScroll) {
-                // Rolando pra baixo – esconder
-                header.style.top = "-100px"; // ajuste com a altura real do seu header
+                // Esconde quando o scroll rolar para baixo
+                header.style.top = "-100px";
             } else {
-                // Rolando pra cima – mostrar
+                // Mostra quando o scroll rolar para cima
                 header.style.top = "0";
             }
 
