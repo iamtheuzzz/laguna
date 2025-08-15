@@ -14,9 +14,7 @@ header {
     left: 0;
     background-color: #FFFFFF;
     z-index: 1000;
-    /* pra garantir que fique acima dos outros elementos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* opcional: sombra elegante */
 }
 
 #laguna-header {
@@ -24,10 +22,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white; /* ou a cor do header do Laguna */
+  background-color: white;
   z-index: 1000;
   transition: top 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* opcional */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 #logo-laguna {
@@ -74,7 +72,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* espaçamento entre main e botão */
 }
 
 #pag1 {
@@ -127,7 +124,6 @@ nav a:hover {
     border: none;
     cursor: pointer;
     transition: transform 0.5s ease;
-    /* animação suave */
 }
 
 .main-pag1 button:hover {
