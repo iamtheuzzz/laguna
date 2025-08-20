@@ -1,6 +1,8 @@
 :root {
     --bg-color: #FFFFFF;
     --black-color: #000000;
+    --azul: #003C5A;
+    --branco: #FFFFFF;
 }
 
 header {
@@ -130,62 +132,144 @@ nav a:hover {
     /* zoom de 10% */
 }
 
-#pag2 h1 {
-    display: flex;
+#produtos{
     justify-content: center;
-    margin-top: 55px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#pag2 p {
-    display: flex;
-    justify-content: center;
-}
-
-.browse a {
-    text-decoration: none;
-}
-
-.browse {
+    align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 40px auto;
-    max-width: 1100px;
+    flex-direction: column;
 }
 
-.browse li {
-    text-align: center;
-    font-weight: 600;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+.produto {
+    display: flex;
+    flex-direction: column;
     transition: transform 0.5s ease;
-    gap: 30px;
-    margin-bottom: 30px;
+    align-items: center;
 }
 
-.browse li:hover {
+.produto:hover {
     transform: scale(1.03);
 }
 
-.browse li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: filter 0.3s ease;
-    display: block;
+.produto, figure{
+    width: 400px;
+    height: 442px;
 }
 
-.browse li p {
-    background-color: #003C5A;
-    color: white;
-    margin: 0;
-    padding: 12px 0;
-    font-weight: 500;
-    font-size: 1rem;
+#produtos h1{
+    font-size: 35px;
+    font-weight: 500;  
+    margin-top: 250px;
+}
+#produtos p{
+    font-size:22px;
+    padding: 17px ;
+    text-align: center;
+}
+
+.galeria-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 41px; /* Espaçamento entre colunas */
+    row-gap: 20px;    /* Espaçamento entre linhas, ajuste como quiser */
+    justify-items: center;
+    margin-top: 29px;
+}
+
+.galeria-produtos h2{
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: 25px;
+    font-weight:lighter;
+    text-align: center;
+    width: 100%;
+    padding: 24px 0px;
+}
+
+figure{
+    position: relative;
+ /*limita tudo oq está dentro da div/tag/elemento, nesse caso, está limitando tudo oq está dentro do figure*/
+}
+
+figure img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--branco);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centraliza horizontalmente */
+    justify-content: center;  /* centraliza verticalmente */
+    transition: opacity 0.4s;
+    z-index: 1;
+}
+figure:hover .overlay{
+    opacity: 1;
+}
+
+.overlay p {
+    font-size: 20px;
+    background-color: var(--branco);
+    color: var(--azul);
+    text-align: center;
+    width: 274px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.acoes img{
+    border: red 1px solid;
+    width: 28px;
+    height: 28px;
+}
+.acoes img, button {
+    display: inline;
+    cursor: pointer;
+}
+.acoes{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0px;
+    gap: 10px;
+}
+.acoes button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--branco);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.compartilhe, .contato{
+    display: flex;
+    align-items: center;
+
+}
+
+.overlay > p:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+    transform: scale(1.05);
+    transition: 0.4s;   
 }
 
 #pag3 {

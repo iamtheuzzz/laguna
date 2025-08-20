@@ -35,48 +35,73 @@
             <button><a href="#pag2">Conheça nossos<br>produtos</a></button>
         </main>
     </div>
-    <div id="pag2">
-        <h1>Alguns dos nossos produtos</h1>
-        <p>Nossos produtos são feitos artesanalmente e com muito carinho pra atender suas necessidades.</p>
-        <ul class="browse">
-            <li>
-                <a href="https://wa.me/qr/5FUFHFHRIZQJL1" target="_blank">
-                    <img src="./src/assets/img/top-perola.svg" alt="Imagem de um top de crochê. Top Pérola">
-                    <p>Top Pérola</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/qr/5FUFHFHRIZQJL1" target="_blank">
-                    <img src="./src/assets/img/vestido-mar.svg" alt="Imagem de um vestido de crochê. Vestido Oceano">
-                    <p>Vestido Oceano</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/qr/5FUFHFHRIZQJL1" target="_blank">
-                    <img src="./src/assets/img/conjunto-estrela.svg" alt="Imagem de um vestido de crochê. Conjunto Estrela" />
-                    <p>Conjunto Estrela</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/qr/5FUFHFHRIZQJL1" target="_blank">
-                    <img src="./src/assets/img/top arraia.svg" alt="Imagem de um top de crochê. Top Arraia">
-                    <p>Top Arraia</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/qr/5FUFHFHRIZQJL1" target="_blank">
-                    <img src="./src/assets/img/vestido sereia.svg" alt="Imagem de um vestido de crochê. Vestido Sereia">
-                    <p>Vestido Sereia</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/qr/5FUFHFHRIZQJL1" target="_blank">
-                    <img src="./src/assets/img/top sol.svg" alt="Imagem de um vestido de crochê. Conjunto Sol" />
-                    <p>Conjunto Sol</p>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <section id="pag2">
+        <div id="produtos">
+            <h3>Algum dos nossos produtos</h3>
+            <p>Nossos produtos são feitos artesanalmente e com muito carinho<br>
+                <span>para atender as suas necessidades!</span>
+            </p>
+        </div>
+            <!-- Seção principal da galeria de produtos -->
+            <section class="galeria-produtos" aria-label="Galeria de Produtos em Crochê">
+                <!-- Cada produto é uma seção independente com significado próprio -->
+                <section class="produto" aria-label="Top Pérola">
+                    <!-- Agrupa imagem com legenda de forma semântica -->
+                    <figure>
+                        <!-- Imagem do produto com descrição acessível para leitores de tela -->
+                        <img src="src/assets/img/top-perola.svg" alt="Top de crochê branco chamado Pérola" />
+                        <!-- Legenda da imagem com sobreposição visível no hover -->
+                        <figcaption class="overlay">
+                            <!-- Pergunta visível no efeito hover -->
+                            <p>Gostou?</p>
+                            <!-- Bloco de botões com ações, tratado como navegação auxiliar -->
+                            <nav class="acoes">
+                                <!-- Botões para interação do usuário -->
+                                <div class="compartilhe">
+                                    <img src="src/assets/img/compartilhar.svg" alt="">
+                                    <button type="button">Compartilhe</button>
+                                </div>
+                                <div class="contato">
+                                    <img src="src/assets/img/telefone.svg" alt="">
+                                    <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                    <button>Entre em contato</button></a>
+                                </div>
+                            </nav>
+                        </figcaption>
+                    </figure>
+                    <!-- Nome do produto como título semântico (melhor que <p>) -->
+                    <h2 class="titulo">Top Pérola</h2>
+                </section>
+                <section class="produto" aria-label="Vestido Oceano">
+                    <!-- Agrupa imagem com legenda de forma semântica -->
+                    <figure>
+                        <!-- Imagem do produto com descrição acessível para leitores de tela -->
+                        <img src="src/assets/img/vestido-mar.svg" alt="Top de crochê branco chamado Pérola" />
+                        <!-- Legenda da imagem com sobreposição visível no hover -->
+                        <figcaption class="overlay">
+                            <!-- Pergunta visível no efeito hover -->
+                            <p>Gostou?</p>
+                            <!-- Bloco de botões com ações, tratado como navegação auxiliar -->
+                            <nav class="acoes">
+                                <!-- Botões para interação do usuário -->
+                                <div class="compartilhe">
+                                    <img src="src/assets/img/compartilhar.svg" alt="">
+                                    <button type="button">Compartilhe</button>
+                                </div>
+                                <div class="contato">
+                                    <img src="src/assets/img/telefone.svg" alt="">
+                                    <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                    <button>Entre em contato</button></a>
+                                </div>
+                            </nav>
+                        </figcaption>
+                    </figure>
+                    <!-- Nome do produto como título semântico (melhor que <p>) -->
+                    <h2 class="titulo">Vestido Oceano</h2>
+                </section>
+            </section>
+        </section>
+        </section>
     <div id="pag3">
         <h1>Quem somos nós?</h1>
         <h3>Olá! Eu sou a Bianca, a fundadora da Laguna Crochê. Desde pequena, sempre fui apaixonada pelas artes e pela
