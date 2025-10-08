@@ -130,7 +130,6 @@ nav a:hover {
 
 .main-pag1 button:hover {
     transform: scale(1.1);
-    /* zoom de 10% */
 }
 
 #pag2 {
@@ -169,7 +168,7 @@ nav a:hover {
 
 .produtos-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    grid-template-columns: repeat(3, 1fr); /* sessão dividida em colunas */
     gap: 40px;
      justify-items: center;
      padding: 60px 80px;
@@ -207,7 +206,7 @@ nav a:hover {
     padding: 12px 0;
 }
   
-  /* Overlay escuro e botões aparecem no hover */
+  /* Efeito overlay escuro que fazem os botões aparecem no hover */
 .card-overlay {
     position: absolute;
     top: 0;
@@ -269,7 +268,7 @@ nav a:hover {
 .pag3-container {
     display: flex;
     align-items: flex-start;
-    gap: 100px; /* espaço entre img e p */
+    gap: 100px;
     justify-content: center;
 }
 
