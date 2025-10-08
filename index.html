@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laguna</title>
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/icon.svg"/>
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/root.css">
+    <script src="src/js/script.js"></script>
     <!-- Desenvolvido por Matheus dev @iamtheusss -->
 </head>
 
@@ -26,6 +28,8 @@
             <a href="https://www.tiktok.com/@laguna.croche?_t=ZM-8wsp8FpdGp6&_r=1" target="_blank"><button class="header-buttons"><img src="./src/assets/img/facebook.svg" alt="botão instagram"></button></a>
             
             <a href="https://www.facebook.com/profile.php?id=61572802733598" target="_blank"><button class="header-buttons"><img src="./src/assets/img/tiktok.svg" alt="botão instagram"></button></a>
+
+            <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button class="header-buttons"><img src="./src/assets/img/whatsapp-header.svg " alt="botão que direciona ao whatsapp"></button></a>
         </div>
     </header>
     <div id="pag1">
@@ -36,72 +40,66 @@
         </main>
     </div>
     <section id="pag2">
-        <div id="produtos">
-            <h3>Algum dos nossos produtos</h3>
-            <p>Nossos produtos são feitos artesanalmente e com muito carinho<br>
-                <span>para atender as suas necessidades!</span>
-            </p>
+        <h2>Alguns dos nossos produtos</h2>
+        <p>Nossos produtos são feitos artesanalmente e com muito carinho pra atender às suas necessidades</p>
+      
+        <div class="produtos-container">
+          <div class="card">
+            <img src="./src/assets/img/top-perola.svg" alt="Top Pérola">
+            <div class="card-overlay">
+              <p class="texto">Gostou?</p>
+              <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button>💬 Entre em contato</button></a>
+            </div>
+            <h3>Top Pérola</h3>
+          </div>
+      
+          <div class="card">
+            <img src="./src/assets/img/vestido-mar.svg" alt="Vestido Mar">
+            <div class="card-overlay">
+                <p class="texto">Gostou?</p>
+                <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button>💬 Entre em contato</button></a>
+            </div>
+            <h3>Vestido Oceano</h3>
+          </div>
+      
+          <div class="card">
+            <img src="./src/assets/img/conjunto-estrela.svg" alt="Conjunto Estrela">
+            <div class="card-overlay">
+                <p class="texto">Gostou?</p>
+                <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button>💬 Entre em contato</button></a>
+            </div>
+            <h3>Conjunto Estrela</h3>
+          </div>
+      
+          <div class="card">
+            <img src="./src/assets/img/top arraia.svg" alt="Top Arraia">
+            <div class="card-overlay">
+                <p class="texto">Gostou?</p>
+                <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button>💬 Entre em contato</button></a>
+            </div>
+            <h3>Top Arraia</h3>
+          </div>
+      
+          <div class="card">
+            <img src="./src/assets/img/vestido sereia.svg" alt="Vestido Sereia">
+            <div class="card-overlay">
+                <p class="texto">Gostou?</p>
+                <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button>💬 Entre em contato</button></a>
+            </div>
+            <h3>Vestido Sereia</h3>
+          </div>
+      
+          <div class="card">
+            <img src="./src/assets/img/top sol.svg" alt="Top Sol">
+            <div class="card-overlay">
+                <p class="texto">Gostou?</p>
+                <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button>💬 Entre em contato</button></a>
+            </div>
+            <h3>Top Sol</h3>
+          </div>
         </div>
-            <!-- Seção principal da galeria de produtos -->
-            <section class="galeria-produtos" aria-label="Galeria de Produtos em Crochê">
-                <!-- Cada produto é uma seção independente com significado próprio -->
-                <section class="produto" aria-label="Top Pérola">
-                    <!-- Agrupa imagem com legenda de forma semântica -->
-                    <figure>
-                        <!-- Imagem do produto com descrição acessível para leitores de tela -->
-                        <img src="src/assets/img/top-perola.svg" alt="Top de crochê branco chamado Pérola" />
-                        <!-- Legenda da imagem com sobreposição visível no hover -->
-                        <figcaption class="overlay">
-                            <!-- Pergunta visível no efeito hover -->
-                            <p>Gostou?</p>
-                            <!-- Bloco de botões com ações, tratado como navegação auxiliar -->
-                            <nav class="acoes">
-                                <!-- Botões para interação do usuário -->
-                                <div class="compartilhe">
-                                    <img src="src/assets/img/compartilhar.svg" alt="">
-                                    <button type="button">Compartilhe</button>
-                                </div>
-                                <div class="contato">
-                                    <img src="src/assets/img/telefone.svg" alt="">
-                                    <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
-                                    <button>Entre em contato</button></a>
-                                </div>
-                            </nav>
-                        </figcaption>
-                    </figure>
-                    <!-- Nome do produto como título semântico (melhor que <p>) -->
-                    <h2 class="titulo">Top Pérola</h2>
-                </section>
-                <section class="produto" aria-label="Vestido Oceano">
-                    <!-- Agrupa imagem com legenda de forma semântica -->
-                    <figure>
-                        <!-- Imagem do produto com descrição acessível para leitores de tela -->
-                        <img src="src/assets/img/vestido-mar.svg" alt="Top de crochê branco chamado Pérola" />
-                        <!-- Legenda da imagem com sobreposição visível no hover -->
-                        <figcaption class="overlay">
-                            <!-- Pergunta visível no efeito hover -->
-                            <p>Gostou?</p>
-                            <!-- Bloco de botões com ações, tratado como navegação auxiliar -->
-                            <nav class="acoes">
-                                <!-- Botões para interação do usuário -->
-                                <div class="compartilhe">
-                                    <img src="src/assets/img/compartilhar.svg" alt="">
-                                    <button type="button">Compartilhe</button>
-                                </div>
-                                <div class="contato">
-                                    <img src="src/assets/img/telefone.svg" alt="">
-                                    <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
-                                    <button>Entre em contato</button></a>
-                                </div>
-                            </nav>
-                        </figcaption>
-                    </figure>
-                    <!-- Nome do produto como título semântico (melhor que <p>) -->
-                    <h2 class="titulo">Vestido Oceano</h2>
-                </section>
-            </section>
-        </section>
-        </section>
+      </section>
+      
     <div id="pag3">
         <h1>Quem somos nós?</h1>
         <h3>Olá! Eu sou a Bianca, a fundadora da Laguna Crochê. Desde pequena, sempre fui apaixonada pelas artes e pela
@@ -124,32 +122,18 @@
     </div>
     <footer>
         <div class="user-buttons">
-            <a href="https://www.instagram.com/laguna.croche?igsh=Nm1oNWM1Z2M4YWo3" target="_blank"><button class="footer-buttons"><img src="./src/assets/img/footer-insta.svg" alt="botão instagram"></button></a>
+            <a href="https://www.instagram.com/laguna.croche?igsh=Nm1oNWM1Z2M4YWo3" target="_blank"><button class="footer-buttons"><img src="./src/assets/img/footer-insta.svg" alt="botão que direciona ao instagram"></button></a>
 
-            <a href="https://www.tiktok.com/@laguna.croche?_t=ZM-8wsp8FpdGp6&_r=1" target="_blank"><button class="footer-buttons"><img src="./src/assets/img/footer-tiktok.svg" alt="botão tiktok"></button></a>
+            <a href="https://www.tiktok.com/@laguna.croche?_t=ZM-8wsp8FpdGp6&_r=1" target="_blank"><button class="footer-buttons"><img src="./src/assets/img/footer-tiktok.svg" alt="botão que direciona ao tiktok"></button></a>
             
-            <a href="https://www.facebook.com/profile.php?id=61572802733598" target="_blank"><button class="footer-buttons"><img src="./src/assets/img/footer-facebook.svg" alt="botão facebook"></button></a>
+            <a href="https://www.facebook.com/profile.php?id=61572802733598" target="_blank"><button class="footer-buttons"><img src="./src/assets/img/footer-facebook.svg" alt="botão que direciona ao facebook"></button></a>
+            
+            <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer"><button class="footer-buttons"><img src="./src/assets/img/whatsapp.svg" alt="botão que direciona ao whatsapp"></button></a>
+            
+            
         </div>
+
         <p>Copyright © 2025-2030 - Giovanna Lima, Maria Clara, Matheus Alves - All rights reserved.</p>
     </footer>
-    <script>
-        let ultimoScroll = 0;
-        const header = document.getElementById("laguna-header");
-
-        window.addEventListener("scroll", () => {
-            const scrollAtual = window.scrollY;
-
-            if (scrollAtual > ultimoScroll) {
-                // Esconde quando o scroll rolar para baixo
-                header.style.top = "-100px";
-            } else {
-                // Mostra quando o scroll rolar para cima
-                header.style.top = "0";
-            }
-
-            ultimoScroll = scrollAtual;
-        });
-    </script>
 </body>
-
 </html>
